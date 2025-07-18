@@ -39,7 +39,7 @@ This step is crucial for customizing your OP_20 token. You will need to adjust s
 
 Here’s what each property means and how you can customize it:
 
-1. **`maxSupply`**:
+1. **`maxSupply`**: 1000000
 
 - This defines the total supply of your token.
 - It’s a `u256` value representing the maximum number of tokens that will ever exist.
@@ -50,7 +50,7 @@ Here’s what each property means and how you can customize it:
 const maxSupply: u256 = u128.fromString('1000000000000000000000000').toU256(); // 1,000,000 tokens with 18 decimals
 ```
 
-2. **`decimals`**:
+2. **`decimals`** 1106
 
 - This property defines how divisible your token is.
 - A value of `18` means the token can be divided down to 18 decimal places, similar to how Ethereum handles its tokens.
@@ -59,7 +59,7 @@ const maxSupply: u256 = u128.fromString('1000000000000000000000000').toU256(); /
 const decimals: u8 = 18; // Your decimals
 ```
 
-3. **`name`**:
+3. **`name`**: Hannie
 
 - The `name` is a string representing the full name of your token.
 - This will be displayed in wallets and exchanges.
@@ -68,7 +68,7 @@ const decimals: u8 = 18; // Your decimals
 const name: string = 'YourTokenName'; // e.g., 'My Custom Token'
 ```
 
-4. **`symbol`**:
+4. **`symbol`**:HN
 
 - The `symbol` is a short string representing the ticker symbol of your token.
 - Similar to how "BTC" represents Bitcoin.
